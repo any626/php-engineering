@@ -1,0 +1,42 @@
+<h1 id="gumgum-web-engineering-php-test">GumGum Web Engineering - PHP Test</h1>
+<h1 id="snippets">Snippets</h1>
+<h2 id="integers-and-other-numbers">Integers and other numbers</h2>
+<ul>
+<li>What will be the output of the following statements:<pre><code class="lang-php">var_dump(0123 == 123);
+var_dump(&#39;0123&#39; == 123);
+var_dump(&#39;0123&#39; === 123);
+</code></pre>
+</li>
+<li>What will be the value of the variables x and y? Why? How does that works?<pre><code class="lang-php">$x = 4 &amp;&amp; 6;
+$y = 8 &amp; 1;
+</code></pre>
+</li>
+<li>What is PHP_INT_MAX? What is the result on each statement? Why?<pre><code class="lang-php">var_dump(PHP_INT_MAX+1);
+var_dump((int)PHP_INT_MAX+1);
+</code></pre>
+</li>
+<li>What is a try-catch block?<ul>
+<li>Write an example.</li>
+<li>How would you use it in a MVC codebase?</li>
+</ul>
+</li>
+</ul>
+<h2 id="arrays">Arrays</h2>
+<ul>
+<li>Besides array_push(), name other ways to add elements to an array.</li>
+<li>What&#39;s the difference between [] and Array() ?</li>
+<li>What&#39;s the maximum allowed items in an array?</li>
+<li>What&#39;s SplFixedArray and why does it exist?</li>
+<li>You have an array of random dates of a year, index them by month and order asc:<pre><code class="lang-php">$days = [&#39;2015-01-01&#39;,&#39;2015-01-02&#39;,&#39;2015-02-20&#39;,&#39;2015-03-24&#39;,&#39;2015-03-21&#39;, ...];
+$indexed = theFunction($days);
+/*
+[
+  &#39;01&#39; =&gt; [&#39;2015-01-01&#39;, &#39;2015-01-02&#39;],
+  &#39;02&#39; =&gt; [&#39;2015-02-20&#39;],
+  &#39;03&#39; =&gt; [&#39;2015-03-21&#39;,&#39;2015-03-24&#39;],
+]
+*/
+</code></pre>
+</li>
+</ul>
+
