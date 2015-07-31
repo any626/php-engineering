@@ -50,6 +50,7 @@ solving style
 - Validation and sanitization are VERY important.
 - If it says "open specs" it means you're free to choose.
 - All code can fail, prepare yours to fail gracefully.
+- You can use frameworks or base components, just keep in mind the size of it.
 - You can use Composer packages, just describe your reasons to chose one or the other.
 - You can use CDNs, google libraries, etc.
 - Yes, final Web optimization is important but not required for this test.
