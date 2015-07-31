@@ -36,7 +36,7 @@ solving style
 - **YOU MUST PROVIDE AN ETA**
 - Assume error_reporting enabled and E_ALL flag set.
 - Assume PHP5.5+, no upward limit. memory limit = 256M.
-  -- Any other PHP ini setting, assume default value.
+  - Any other PHP ini setting, assume default value.
 - Assume a Linux environment with Nginx+PHP or PHP built-in web server.
 - Assume we'll read your code, remember:
   - Clean code is a HUGE plus.
