@@ -25,9 +25,29 @@ var_dump((int)PHP_INT_MAX+1);
 
 Arrays
 ------
+- What will be printed?
+```php
+$a = array();
+if ($a == null) {
+    echo 'Indeed.';
+} else {
+    echo 'Nope.';
+}
+```
 - Besides array_push(), name other ways to add elements to an array.
-- What's the difference between [] and Array() ?
+- What's the difference between [ ] and Array() ?
 - What's the maximum allowed items in an array?
+- What will be printed?
+```php
+echo count([
+    null => 'a',
+    true => 'b',
+    false => 'c',
+    0 => 'd',
+    1 => 'e',
+    '' => 'f',
+]);
+```
 - What's SplFixedArray and why does it exist?
 - You have an array of random dates of a year, index them by month and order asc:
 ```php
@@ -47,8 +67,7 @@ OOP
 - What does spl_autoload_register do?
 - What is late static binding?
 - What is Type hinting and what are its limitations on PHP5?
-- Explain in lay terms the concepts and usage cases of:
+- Explain in lay terms the concepts of the following terms, and write some use cases:
  - Abstract classes
  - Interfaces
  - Traits
-
