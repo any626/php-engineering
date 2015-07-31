@@ -26,7 +26,7 @@ Build a PHP app that does the following using it:
     - Add filters:
       - Min/Max avg. temperature
       - Table should show/hide rows according to this filter
-      - Chart should respond to the filter as well, freedom to choose how.
+      - Chart should respond to the filter as well, open specs.
   - /upload
     - Reupload the data, recreating everything from it.
   - On all routes the whole app style is affected by **today** avg temp:
@@ -53,7 +53,8 @@ and had 36 goals scored against them).
 
 The column labeled LGD is the Last Game Day. Just keep it in mind.
 
-Write an RESTful API that is capable of:
+Write a RESTful API with the folling endpoints/functionality:
+- Auth on all endpoints, open specs.
 - /upload
   - Upload the file and build a local sqlite table from it.
 - /list
@@ -66,18 +67,17 @@ Write an RESTful API that is capable of:
 
 *Must work with calls from any domain*
 
-*Front end is a plus*
+*Front-end is a plus*
 
 *JSON ouput is required, HTML is a plus*
 
 
-Exercise #3 - Refactoring
+Exercise #3 - Final delivery
 -------------------------
 
-Take the two programs written previously and factor out as much common code as
+- Take the two programs written previously and factor out as much common code as
 possible, leaving you with two smaller programs using shared COMPOSER components
-
-And add an option to the API:
-- /restless : Shows a list of all the teams which last game was on 75 F Avg or more
-
-Deliver SQL schema files
+- And add an option to the API:
+  - /restless : Shows a list of all the teams which last game was on 75 F Avg or more
+- Deliver SQL schema files
+- Add unit tests to your composer components
