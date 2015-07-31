@@ -35,7 +35,9 @@ Build a PHP app that does the following using it:
       - If > 80F, warm/yellow-ish colors
 
 *"Today" means using the day from the actual server date*
+
 *Assume PHP error reporting enabled with E_ALL.*
+
 *Validations are important*
 
 
@@ -52,14 +54,20 @@ and had 36 goals scored against them).
 The column labeled LGD is the Last Game Day. Just keep it in mind.
 
 Write an RESTful API that is capable of:
-- Upload the file and build a local sqlite table from it.
-- List all results
-  - Query params: filters (at least 2), sortable, output format
+- /upload
+  - Upload the file and build a local sqlite table from it.
+- /list
+  - List all results.
+  - Allows query params: filters (at least 2), sortable, output format.
+  - Default order must be by last updated (CRUD) date.
+- /top
+  - Outputs each team and their goal difference, in DESC order by the later.
 - CRUD operations on each entry Name field.
-- /top Outputs each team and their goal difference, in DESC order by the later
 
 *Must work with calls from any domain*
+
 *Front end is a plus*
+
 *JSON ouput is required, HTML is a plus*
 
 
@@ -70,5 +78,6 @@ Take the two programs written previously and factor out as much common code as
 possible, leaving you with two smaller programs using shared COMPOSER components
 
 And add an option to the API:
-- /restless
-  - Shows a list of all the teams that last game was on 75 F Avg or more
+- /restless : Shows a list of all the teams which last game was on 75 F Avg or more
+
+Deliver SQL schema files
